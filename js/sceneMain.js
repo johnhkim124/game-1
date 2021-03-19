@@ -5,10 +5,11 @@ class SceneMain extends Phaser.Scene {
     preload()
     {
     	//load our images or sounds
+        this.load.image("face", "images/face.png");
     }
     create() {
         //define our objects
-        console.log("Ready!");
+        this.face = this.add.image(300, 700, "face");
     }
     update() {
         //constant running loop
